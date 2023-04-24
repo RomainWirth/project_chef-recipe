@@ -1,12 +1,10 @@
 // LANDING PAGE
-
-.loading_page {
+.nav_page {
     position: absolute;
     z-index: 2;
     width: 100%;
     height: 1;
     margin: 0 auto;
-    background-color: $color-primary; 
     animation: fondu-out 3000ms ease-in-out forwards;
     animation-iteration-count: 1;
     &__loader {
@@ -14,8 +12,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        &--lettre {
-            color: $color-quartary;
+        &--word {
+            color: $color-white;
             animation: loading 5000ms ease-in-out both;
             &:nth-child(2){animation-delay: $loader-delay*1;}
             &:nth-child(2){animation-delay: $loader-delay*2;}
@@ -30,15 +28,15 @@
     }
 }
 
-@keyframes fondu-out {
-    0% {opacity: 1;}
-    20% {opacity: 0.99;}
-    80% {opacity: 0.95;}
-    85% {opacity: 0.25;}
-    90% {opacity: 0.2;}
-    95% {opacity: 0.1; transform: scaleY(1);}
-    100% {opacity: 0; transform: scaleY(0);}
-}
+// @keyframes fondu-out {
+//     0% {opacity: 1;}
+//     20% {opacity: 0.99;}
+//     80% {opacity: 0.95;}
+//     85% {opacity: 0.25;}
+//     90% {opacity: 0.2;}
+//     95% {opacity: 0.1; transform: scaleY(1);}
+//     100% {opacity: 0; transform: scaleY(0);}
+// }
 
 @keyframes loading {
     0% {color: $color-black; text-shadow: 0 0 7px $color-black;}
