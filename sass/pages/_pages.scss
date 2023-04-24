@@ -1,0 +1,47 @@
+// LANDING PAGE
+
+.loading_page {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 1;
+    margin: 0 auto;
+    background-color: $color-primary; 
+    animation: fondu-out 3000ms ease-in-out forwards;
+    animation-iteration-count: 1;
+    &__loader {
+        padding-top: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--lettre {
+            color: $color-quartary;
+            animation: loading 5000ms ease-in-out both;
+            &:nth-child(2){animation-delay: $loader-delay*1;}
+            &:nth-child(2){animation-delay: $loader-delay*2;}
+            &:nth-child(3){animation-delay: $loader-delay*3;}
+            &:nth-child(4){animation-delay: $loader-delay*4;}
+            &:nth-child(5){animation-delay: $loader-delay*5;}
+            &:nth-child(6){animation-delay: $loader-delay*6;}
+            &:nth-child(7){animation-delay: $loader-delay*7;}
+            &:nth-child(8){animation-delay: $loader-delay*8;}
+            & h2 {font-size: 50px;}
+        }
+    }
+}
+
+@keyframes fondu-out {
+    0% {opacity: 1;}
+    20% {opacity: 0.99;}
+    80% {opacity: 0.95;}
+    85% {opacity: 0.25;}
+    90% {opacity: 0.2;}
+    95% {opacity: 0.1; transform: scaleY(1);}
+    100% {opacity: 0; transform: scaleY(0);}
+}
+
+@keyframes loading {
+    0% {color: $color-black; text-shadow: 0 0 7px $color-black;}
+    10% {color: $color-primary; text-shadow: 0 0 7px $color-black;}
+    100% {color: $color-secondary; text-shadow: 0 0 7px $color-secondary;}
+}
