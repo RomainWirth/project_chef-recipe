@@ -4,7 +4,7 @@
   "description": "Projet fictif pour travailler sur SASS",
   "main": "index.js",
   "scripts": {
-    "sass": "--watch ./sass/main.scss:./public/css/styles.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css"
   },
   "author": "",
   "license": "ISC",
