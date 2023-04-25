@@ -29,7 +29,7 @@ a {
   font-weight: normal;
   font-style: normal;
 }
-.nav_page {
+.loading_page {
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -38,41 +38,41 @@ a {
   animation: fondu-out 3000ms ease-in-out forwards;
   animation-iteration-count: 1;
 }
-.nav_page__loader {
+.loading_page__loader {
   padding-top: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav_page__loader--word {
+.loading_page__loader--word {
   color: #fff;
   animation: loading 5000ms ease-in-out both;
 }
-.nav_page__loader--word:nth-child(2) {
+.loading_page__loader--word:nth-child(2) {
   animation-delay: 200ms;
 }
-.nav_page__loader--word:nth-child(2) {
+.loading_page__loader--word:nth-child(2) {
   animation-delay: 400ms;
 }
-.nav_page__loader--word:nth-child(3) {
+.loading_page__loader--word:nth-child(3) {
   animation-delay: 600ms;
 }
-.nav_page__loader--word:nth-child(4) {
+.loading_page__loader--word:nth-child(4) {
   animation-delay: 800ms;
 }
-.nav_page__loader--word:nth-child(5) {
+.loading_page__loader--word:nth-child(5) {
   animation-delay: 1000ms;
 }
-.nav_page__loader--word:nth-child(6) {
+.loading_page__loader--word:nth-child(6) {
   animation-delay: 1200ms;
 }
-.nav_page__loader--word:nth-child(7) {
+.loading_page__loader--word:nth-child(7) {
   animation-delay: 1400ms;
 }
-.nav_page__loader--word:nth-child(8) {
+.loading_page__loader--word:nth-child(8) {
   animation-delay: 1600ms;
 }
-.nav_page__loader--word h2 {
+.loading_page__loader--word h2 {
   font-size: 50px;
 }
 
